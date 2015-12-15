@@ -32,6 +32,7 @@ function updateRoom(key) {
 
 function showInfo() {
     $("body").empty();
+    $("body").append("Epic Adventure 2015<br>--------------------------<br>");
     if (currentRoom === undefined) {
         // $("body").append("Say what?  Try another button.<br>");  
         currentRoom = livingRoom; 
