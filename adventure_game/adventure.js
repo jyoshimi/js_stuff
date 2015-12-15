@@ -3,12 +3,14 @@
 // First the rooms
 var livingRoom = new Room("Sitting in the living room, bored. Press k to go to the kitchen, and b for the bedroom");
 var kitchen = new Room("Making a quesadilla, yo. Press l to go back to the living room.");
-var bedroom = new Room("Siesta time.... Press l to go back to the living room");
+var bedroom = new Room("Siesta time.... Press l to go back to the living room, b for bathroom");
+var bathroom1 = new Room("Hmm, out of toilet paper. Press b to go back to the bedroom");
 
 // Then a "move map" for each room
 livingRoom.moveMap =  {'k': kitchen, 'b':bedroom};
 kitchen.moveMap =  {'l':livingRoom};
-bedroom.moveMap =  {'l':livingRoom};
+bedroom.moveMap =  {'l':livingRoom, 'b':bathroom1};
+bathroom1.moveMap = {'b':bedroom};
 
 // Set this to the first room
 var currentRoom = livingRoom; 
