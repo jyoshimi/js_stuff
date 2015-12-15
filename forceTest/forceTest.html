@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Force Test</title>
+    <script src="rect.js"></script>
+    <script src="forceTest.js"></script>
+</head>
+
+<body>
+    <h2>Force test</h2>
+    <p>
+        <canvas id="myCanvas" width="400" height="400" style="border:2px solid black;">
+        </canvas>
+    </p>
+    <p>
+        <button onclick="Game.addRect()">Add rectangle</button>
+        <button onclick="Game.start()">Start</button>
+        <button onclick="Game.update()">Step</button>
+        <button onclick="Game.stop()">Stop</button>
+        <button onclick="Game.clear()">Clear</button>
+        <br>
+        <hr>
+        <button onclick="Game.forceUp()">Apply upward force</button>
+        Force (in Newtons):
+        <input type="text" id="force" value="50">
+        <br>
+        <input onclick="Game.toggleFriction()" id = "friction" type="checkbox" name="friction" value="Friction">Use friction<br>
+
+    </p>
+    <script type="text/javascript">
+    Game.initialize();
+    </script>
+</body>
+
+</html>
