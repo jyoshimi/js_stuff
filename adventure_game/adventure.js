@@ -17,7 +17,7 @@ garden.moveMap =   {'l':livingRoom};
 // Set this to the first room
 var currentRoom = livingRoom; 
 
-////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
 
 var main = function() {
     showInfo(currentRoom);
