@@ -5,7 +5,7 @@ var livingRoom = new Room("Sitting in the living room, bored. Press k to go to t
 var kitchen = new Room("Making a quesadilla, yo. Press l to go back to the living room.");
 var bedroom = new Room("Siesta time.... Press l to go back to the living room, b for bathroom");
 var bathroom1 = new Room("Hmm, out of toilet paper. Press b to go back to the bedroom");
-var garden = new Room("I wondered if the previous owners buried anything here? Press l to go to back to the living room.");
+var garden = new Room("I wonder if the previous owners buried anything here? Press l to go to back to the living room.");
 
 // Then a "move map" for each room
 livingRoom.moveMap =  {'k': kitchen, 'b':bedroom, 'o':garden};
@@ -48,7 +48,6 @@ function Room(description) {
 
 $(document).keypress(function(event){
     updateRoom(String.fromCharCode(event.which)); 
-    updateRoom(currentKey);
 });
 
 // Don't do jquery stuff until page has loaded
