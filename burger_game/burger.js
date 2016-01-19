@@ -1,3 +1,8 @@
+// See Lilo and stich sandwitch stacker
+// Bun > other stuff (lettuce, cheese, meat, tomatos) > Bun
+//      Point for catching food when you complete sandwitch
+// Bombs and other bad stuff drop
+
 var game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { create: create, update: update });
 var score = 0;
 
@@ -10,7 +15,7 @@ function create() {
 
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
-    game.stage.backgroundColor = '#ffffff';
+    game.stage.backgroundColor = '#124231';
 
     // The "ground"
     var endData = [
